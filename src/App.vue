@@ -24,7 +24,7 @@ button {
   padding: 0;
   background: none;
   font-size: 100%;
-  vertical-aling: baseline;
+  vertical-align: baseline;
   font-family: inherit;
   font-weight:inherit;
   color: inherit;
@@ -57,7 +57,7 @@ body {
   display: block;
   padding: 5px;
   border-top:1px solid #EDEDED;
-  text-aling: center;
+  text-align: center;
 }
 
 .hiden {
@@ -75,7 +75,14 @@ body {
 .todoapp h1 {
   position: absolute;
   top: -155px;
-  
+  width: 100%;
+  font-size: 100px;
+  font-weight: 100;
+  text-align: center;
+  color: rgba(175,47,47,0.15);
+  text-rendering: optimizeLegibility;
+  -webkit-rendering: optimizeLegibility;
+  -moz--rendering: optimizeLegibility;
 }
 
 </style>
