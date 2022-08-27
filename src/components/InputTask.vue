@@ -1,0 +1,50 @@
+<template>
+<div>
+    <input 
+    class="new-todo"
+    @keyup.enter="addTask"
+    placeholder="O que precisa ser feito ?"
+    >
+</div>
+</template>
+
+<style>
+
+.todoapp input::-webkit-input-placeholder {
+    font-style: italic;
+    font-weight: 300;
+    color: #E6E6E6;
+}
+
+.todoapp input::-moz-input-placeholder {
+    font-style: italic;
+    font-weight: 300;
+    color: #E6E6E6;
+}
+
+.todoapp input::input-placeholder {
+    font-style: italic;
+    font-weight: 300;
+    color: #E6E6E6;
+}
+
+.new-todo,
+.edit {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    font-size: 24px;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: 1.4em;
+    border: 0;
+    color: inherit;
+    padding: 6px;
+    border: 1px solid #999;
+    box-shadow: inset 0 -1px 5px 0 rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+</style>
