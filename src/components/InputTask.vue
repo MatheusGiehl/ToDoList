@@ -8,8 +8,8 @@
 </div>
 </template>
 
-<style>
 
+<style>
 .todoapp input::-webkit-input-placeholder {
     font-style: italic;
     font-weight: 300;
@@ -44,7 +44,14 @@
     box-shadow: inset 0 -1px 5px 0 rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing:grayscale;
+    -moz-osx-font-smoothing:grayscale;       
+}
+
+.new-todo {
+    padding: 16px 16px 16px 60px;
+    border: none;
+    background: rgba(0, 0, 0, 0.03);
+    box-shadow: inset 0 -2px -1px rgba(0, 0, 0, 0.03);
 }
 
 </style>
