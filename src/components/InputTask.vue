@@ -2,12 +2,32 @@
 <div>
     <input 
     class="new-todo"
-    @keyup.enter="addTask"
+    @key-up.enter="addTask"
     placeholder="O que precisa ser feito ?"
     >
 </div>
 </template>
 
+<script>
+import { Task } from '../models/task'
+
+export default {
+    data () {
+        return {           
+        }
+    },
+    methods: {
+        addTask($event) {
+            let value = $event.target.value
+            let task = new Task ()
+            task.completed = false
+            task.title = value
+            this.$emit('newTask', task)
+            $event.target.value = ''
+        }
+    }
+}
+</script>
 
 <style>
 .todoapp input::-webkit-input-placeholder {
