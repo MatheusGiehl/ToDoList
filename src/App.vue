@@ -9,7 +9,7 @@
 </templete>
 
 <script>
-
+import InputTaskVue from './components/InputTask.vue';
 </script>
 
 <style>
