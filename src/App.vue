@@ -9,7 +9,32 @@
 </templete>
 
 <script>
-import InputTaskVue from './components/InputTask.vue';
+import InputTask from './components/InputTask.vue';
+import TaskList from './components/TaskList.vue';
+import { Task } from './models/task';
+
+export default {
+  name: 'App',
+  components: {
+    InputTask,
+    TaskList
+  },
+  data() {
+    return {
+      task: []
+    }
+  },
+  methods: {
+    addTask ($event) {
+      let value = $event.target.value
+      let task= new Task()
+      task.completed = false
+      Task.title = value
+      this.$emit('newTask', task)
+      $event.target.value = ''
+    }
+  }
+}
 </script>
 
 <style>
